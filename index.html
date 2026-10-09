@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mio Ogawa</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#top">Mio Ogawa</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+            </nav>
+        </header>
+        <main>
+            <section id="top">
+                <img src="https://akelog52.com/wp-content/uploads/2023/06/23718557.jpg" width="80%">
+        
+                <h1>
+                    Mio Ogawa<br>
+                    Portfolio
+                </h1>
+            </section>
+            <section id="about">
+                <h3>About</h3>
+                <p>
+                     小川　美桜<br>
+                     東京都市大学デザイン・データ科学部
+                </p>
+                <p>
+                     出身：神奈川県川崎市<br>
+                     生年月日：2006年04月19日
+                </p>
+            </section>
+            <section id="works" class="works">
+                <h3>Works</h3>
+                <div class="works-controls">
+                    <select id="category">
+                        <option value="all">すべてのカテゴリ</option>
+                    </select>
+                    <select id="sort">
+                        <option value="new">新しい順</option>
+                        <option value="old">古い順</option>
+                        <option value="title">タイトル順</option>
+                    </select>
+                </div>
+                <div id="works-grid"></div>
+            </section>
+        </main>
+        <footer>
+            <span>© 2026 Mio Ogawa</span>
+        </footer>
+        <script src="works.js"></script>
+    </body>
+</html>
