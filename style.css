@@ -1,6 +1,6 @@
 body {
-  background: #c5eeec;
-  color: #393838;
+  background: #2d3278;
+  color: #2d3278;
 }
 a {
     color: inherit;
@@ -13,9 +13,12 @@ header {
    width:100%;
    position: fixed;
    padding: 0px 30px;
-   background: #c5eeec;
+   background: #c5dcee;
    height: 75px;
    top: 0;
+   left: 0;
+   z-index: 1000;
+   box-sizing: border-box;
 }
 nav {
    display: flex;
@@ -41,6 +44,15 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+}
+/* カテゴリ・並べ替えの選択ボックス */
+.works-controls select {
+    background-color: #c5dcee;
+    color: #2d3278;
+    border: 1px solid #c5dcee;
+    border-radius: 8px;
+    padding: 10px 14px;
+    cursor: pointer;
 }
 .work-card img {
     width:100%;
@@ -100,3 +112,73 @@ nav a:hover {
         flex-direction: column;
     }
 }
+
+/*　天気　*/
+#weather-section {
+    padding: 10px 30px;
+    text-align: left;
+}
+
+#weather-icon {
+    font-size: 60px;
+    margin: 0;
+}
+/*　晴れ　*/
+body.weather-sunny  {
+    background-color: #fffaf0;
+}
+body.weather-sunny .site-header {
+    background-color: #fffaf0;
+}
+
+/*　曇り　*/
+body.weather-cloudy {
+    background-color: #dfe3e8;
+}
+body.weather-cloudy .site-header {
+    background-color: #dfe3e8;
+}
+
+/*　雨　*/
+body.weather-rainy {
+    background-color: #cbd9e5;
+}
+body.weather-rainy .site-header {
+    background-color: #cbd9e5;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text h1 {
+    position: absolute;
+    left: 8%;
+    bottom: 12%;
+    color:white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
